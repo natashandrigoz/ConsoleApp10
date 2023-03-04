@@ -93,11 +93,18 @@ namespace ConsoleApp10
             //Список из женских имен
             var name = new List<string>() { "Анна", "Ольга", "Ева", "Ирина", "Марина", "Светлана" };
             Output(name);
-            //1. Добавьте в список элементы строчными буквами
+            //1. Преобразуйте элементы списка на прописные буквы
             foreach(string element in name)
             {
                 Console.WriteLine($"{element.ToUpper()}");
             }
+            Console.WriteLine();
+            //2. Преобразуйте все буквы элементов в строчные
+            foreach (string element in name)
+            {
+                Console.WriteLine($"{element.ToLower()}");
+            }
+            Console.WriteLine();
             Console.Read();
             
         }
