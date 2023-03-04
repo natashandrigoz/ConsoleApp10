@@ -114,7 +114,9 @@ namespace ConsoleApp10
             //5. Добавление в коллекцию нового элемента в начале списка
             name.Insert(0, "Маргарита");
             Output(name);
-
+            //6. Удаление третьего элемента коллекции
+            name.RemoveAt(2);
+            Output(name);
             Console.Read();
 
         }
