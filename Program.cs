@@ -47,27 +47,38 @@ namespace ConsoleApp10
             //people.InsertRange(1, new string [] { "Mike", "Kate" });
             //Output(people);
             // people = { "Eugene", "Mike", "Kate", "Tom", "Bob", "Sam", "Alice" };
-            
+
             //Удаление из списка
             //Создание списка
-            var people = new List<string> { "Eugene", "Mike", "Kate", "Tom", "Bob", "Sam", "Tom", "Alice" };
+            //var people = new List<string> { "Eugene", "Mike", "Kate", "Tom", "Bob", "Sam", "Tom", "Alice" };
             //1. Удаление элемента по указанному индексу index (второй элемент)
-            people.RemoveAt(1);
-            Output(people);
+            //people.RemoveAt(1);
+            //Output(people);
             // people = { "Eugene", "Kate", "Tom", "Bob", "Sam", "Tom", "Alice" };
             //2. Удаление элемента item ("Tom") из списка
-            people.Remove("Tom");
-            Output(people);
+            //people.Remove("Tom");
+            //Output(people);
             // people = { "Eugene", "Kate", "Bob", "Sam", "Tom", "Alice" };
             //3. Удаление из списка 2 элемента начиная с индекса 1
-            people.RemoveRange(1, 2);
-            Output(people);
+            //people.RemoveRange(1, 2);
+            //Output(people);
             //people = { "Eugene", "Sam", "Tom", "Alice" };
             //4. Удаление из списка всех элементов
-            people.Clear();
+            //people.Clear();
             //people = {  };
 
-
+            //Расположение элементов в обратном порядке
+            //Создание списка
+            var people = new List<string> { "Eugene", "Tom", "Mike", "Sam", "Bob" };
+            Output(people);
+            people.Reverse();
+            Output(people);
+            //people = { "Bob","Sam", "Mike", "Tom", "Eugene"};
+            List<string> people2 = new List<string>() { "Eugene", "Tom", "Mike", "Sam", "Bob" };
+            // переворачиваем часть только 3 элемента с индекса 1
+            people2.Reverse(1, 3);
+            Output(people);
+            //people2 = { "Eugene","Sam", "Mike", "Tom", "Bob" };
             Console.Read();
             
         }
