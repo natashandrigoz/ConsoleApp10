@@ -117,6 +117,9 @@ namespace ConsoleApp10
             //6. Удаление третьего элемента коллекции
             name.RemoveAt(2);
             Output(name);
+            //7. Расположение элементов в обратном порядке
+            name.Reverse();
+            Output(name);
             Console.Read();
 
         }
