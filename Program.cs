@@ -107,8 +107,13 @@ namespace ConsoleApp10
             Console.WriteLine();
             //3. Определите текущее количество элементов коллекции
             Console.WriteLine($"Текущее количество элементов коллекции = {name.Count}");
-            Console.Read();
+            Console.WriteLine();
+            //4. Добавление в коллекцию нового элемента в конце списка
+            name.Add("Наталья");
+            Output(name);
             
+            Console.Read();
+
         }
     }
 }
