@@ -12,6 +12,15 @@ namespace ConsoleApp10
         /// Дополнительный метод для вывода коллекции
         /// </summary>
         /// <param name="list">элемент списка</param>
+        //static void Output(List<string> list)//параметр-ссылка
+        //{
+        //    foreach (string element in list)
+        //    {
+        //        Console.WriteLine(element);
+        //    }
+        //    Console.WriteLine();
+        //}
+
         static void Output(List<string> list)//параметр-ссылка
         {
             foreach (string element in list)
@@ -20,6 +29,7 @@ namespace ConsoleApp10
             }
             Console.WriteLine();
         }
+
 
         /// <summary>
         /// Методы списка
@@ -69,16 +79,25 @@ namespace ConsoleApp10
 
             //Расположение элементов в обратном порядке
             //Создание списка
-            var people = new List<string> { "Eugene", "Tom", "Mike", "Sam", "Bob" };
-            Output(people);
-            people.Reverse();
-            Output(people);
+            //var people = new List<string> { "Eugene", "Tom", "Mike", "Sam", "Bob" };
+            //Output(people);
+            //people.Reverse();
+            //Output(people);
             //people = { "Bob","Sam", "Mike", "Tom", "Eugene"};
-            List<string> people2 = new List<string>() { "Eugene", "Tom", "Mike", "Sam", "Bob" };
+            //List<string> people2 = new List<string>() { "Eugene", "Tom", "Mike", "Sam", "Bob" };
             // переворачиваем часть только 3 элемента с индекса 1
-            people2.Reverse(1, 3);
-            Output(people);
+            //people2.Reverse(1, 3);
+            //Output(people);
             //people2 = { "Eugene","Sam", "Mike", "Tom", "Bob" };
+
+            //Список из женских имен
+            var name = new List<string>() { "Анна", "Ольга", "Ева", "Ирина", "Марина", "Светлана" };
+            Output(name);
+            //1. Добавьте в список элементы строчными буквами
+            foreach(string element in name)
+            {
+                Console.WriteLine($"{element.ToUpper()}");
+            }
             Console.Read();
             
         }
