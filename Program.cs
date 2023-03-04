@@ -105,6 +105,8 @@ namespace ConsoleApp10
                 Console.WriteLine($"{element.ToLower()}");
             }
             Console.WriteLine();
+            //3. Определите текущее количество элементов коллекции
+            Console.WriteLine($"Текущее количество элементов коллекции = {name.Count}");
             Console.Read();
             
         }
